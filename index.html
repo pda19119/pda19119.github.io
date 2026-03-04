@@ -13,5 +13,22 @@
             </a-entity>
           <a-light type="ambient" intensity="0.25"></a-light>
                 <a-plane color="#2a1c0e" height="1000" width="1000" rotation="-90 0 0" metalness="0" shadow></a-plane>
-        </a-scene></body>
+  <a-assets>
+    <a-asset-item id="tree" src="tree.gitf">
+  </a-asset-item>
+      <a-asset-item id="bird" src="bird.gitf">
+        </a-asset-item>
+      <a-asset-item id="bee" src="bee.gift">
+        </a-asset-item>
+      <audio id="hawk" src="Hawk_Call_2x-SoundBible.com-1697796838.mp3">
+      </audio>
+      <audio id="bzz"  src="Bee-SoundBible.com-914644763.mp3">
+      </audio>
+      </a-assets>
+      <a-entity gltf-model="#bird" scale="5 5 5" shadow="receive:false" posittion="-50 25 -50">
+      </a-entity>
+      <a-entity glft-model="bird='5 5 5" shadow="receive:false" position="50 25 -50" rotation="0 1800">
+        </a-entity>
+        </a-scene>
+  </body>
 </html>
