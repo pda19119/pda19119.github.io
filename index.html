@@ -11,9 +11,9 @@
         } 
       });
     AFRAME.registerComponent('flying' , {
-      tick:function () {
+      tick: function () {
         if (Math.random() < 0.5) return;
-        var x =Math.random() * 100 - 50;
+        var x = Math.random() * 100 - 50;
         var y = Math.random() * 3 + 3;
         var z = Math.random() * 100 - 50;
         this.el.setAttribute('animation' , 'property:position; ' + x + ' ' + y + ' ' + z);
@@ -68,7 +68,7 @@
       }
 
       for (var i =0; i < 10; i ++) {
-        var bee = document.createElement( 'a-entity');
+        var bee = document.createElement('a-entity');
         var x = Math.random() * 10 - 5;
         var y = Math.random() * 3 + 3;
         var z = Math.random() * 10 - 5;
@@ -77,7 +77,7 @@
         bee.setAttribute('position' , x +' '+ y +' '+ z);
         bee.setAttribute('scale', '0.01 0.01 0.01');
         bee.setAttribute('rotation' , '0 ' + r + ' 0');
-        bee.setAttribute('sound' , 'src: #bzz; volume: 0.1; poolSize: 10');
+        bee.setAttribute('sound' , 'src: #bzzz; volume: 0.1; poolSize: 10');
         bee.setAttribute('sounding' , '');
         bee.setAttribute('flying' , '');
         scene1.appendChild(bee);
